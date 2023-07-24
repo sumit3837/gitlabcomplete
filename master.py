@@ -16,7 +16,7 @@ wrld_df = spark.read.csv("C:/file/world_population.csv", inferSchema=True, heade
 # wrld_df.show()
 # wrld_df.filter((wrld_df.Country != 'India') & (wrld_df.Continent == 'Asia')).show(truncate=False)
 wrld_df.select('Country', 'Continent').show(truncate=False)
-# write.csv("C:/Users/Desktop/pyspark/output/output.csv")
+# write.csv("C:/Users/abc/Desktop/pyspark/output/output.csv")
 
 # show(truncate=True)
 #print("added from editor")
