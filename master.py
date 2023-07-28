@@ -16,6 +16,8 @@ wrld_df = spark.read.csv("C:/Users/Desktop/pyspark/file/world_population.csv", i
 # wrld_df.show()
 # wrld_df.filter((wrld_df.Country != 'India') & (wrld_df.Continent == 'Asia')).show(truncate=False)
 wrld_df.select('Country', 'Continent').show(truncate=False)
+
+
 # write.csv("C:/Users/Desktop/pyspark/output/output.csv")
 wrld_df.show()
 # show(truncate=True)
