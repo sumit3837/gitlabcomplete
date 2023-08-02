@@ -12,7 +12,7 @@ spark = SparkSession.builder \
     .config("spark.sql.autoBroadcastJoinThreshold", -1) \
     .appName("Reading csv file") \
     .getOrCreate()
-wrld_df = spark.read.csv("C:/Users/Desktop/pyspark/file/world_population.csv", inferSchema=True, header=True)
+wrld_df = spark.read.csv("C:/Users/SUMIT/Desktop/pyspark/file/world_population.csv", inferSchema=True, header=True)
 # wrld_df.show()
 # wrld_df.filter((wrld_df.Country != 'India') & (wrld_df.Continent == 'Asia')).show(truncate=False)
 wrld_df.select('Country', 'Continent').show(truncate=False)
@@ -23,4 +23,5 @@ wrld_df.show()
 # show(truncate=True)
 #print("added from editor")
 #added from feature-branch3
+#added from feature-branch2 for conflict
 #ghhkjk ugkgjkgkgjfyft
